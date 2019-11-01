@@ -1,0 +1,10 @@
+src\FilipePires_BusinessCard\Library\PackageCache
+src\FilipePires_BusinessCard\Library\PlayerDataCache
+src\FilipePires_BusinessCard\Library\ShaderCache
+src\FilipePires_BusinessCard\Library\StateCache
+
+src\FilipePires_BusinessCard\Logs
+
+*.psd
+
+
