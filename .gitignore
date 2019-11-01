@@ -9,3 +9,6 @@ src/FilipePires_BusinessCard/Logs
 
 # photoshop files
 *.psd
+
+# unity meta files
+*.meta
