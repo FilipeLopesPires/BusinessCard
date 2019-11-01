@@ -1,0 +1,11 @@
+# cache folders
+src/FilipePires_BusinessCard/Library/PackageCache/
+src/FilipePires_BusinessCard/Library/PlayerDataCache/
+src/FilipePires_BusinessCard/Library/ShaderCache/
+src/FilipePires_BusinessCard/Library/StateCache/
+
+# logs
+src/FilipePires_BusinessCard/Logs
+
+# photoshop files
+*.psd
