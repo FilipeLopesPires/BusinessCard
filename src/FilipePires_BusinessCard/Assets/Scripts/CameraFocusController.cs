@@ -1,27 +1,36 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 using System.Collections;
 using Vuforia;
 
-public class CameraFocusController: MonoBehaviour {
+public class CameraFocusController : MonoBehaviour {
 
-    // code from  Vuforia Developer Library
-    // https://library.vuforia.com/articles/Solution/Camera-Focus-Modes
-    void Start() {    
-        var vuforia = VuforiaARController.Instance;    
-        vuforia.RegisterVuforiaStartedCallback(OnVuforiaStarted);    
-        vuforia.RegisterOnPauseCallback(OnPaused);
-    }  
+    private bool mVuforiaStarted = false;
 
-    private void OnVuforiaStarted() {    
-    CameraDevice.Instance.SetFocusMode(
-        CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+    void Start() {
+        VuforiaARController vuforia = VuforiaARController.Instance;
+        if (vuforia != null) {
+            vuforia.RegisterVuforiaStartedCallback(StartAfterVuforia);
+        }
     }
 
-    private void OnPaused(bool paused) {    
-        if (!paused) { // resumed
-            // Set again autofocus mode when app is resumed
-            CameraDevice.Instance.SetFocusMode(
-                CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);    
+    private void StartAfterVuforia() {
+        mVuforiaStarted = true;
+        SetAutofocus();
+    }
+
+    void OnApplicationPause(bool pause) {
+        if (!pause) {
+            if (mVuforiaStarted) {
+                SetAutofocus(); 
+            }
+        }
+    }
+
+    private void SetAutofocus() {
+        if (CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO)) {
+            Debug.Log("Autofocus set");
+        } else {
+            Debug.Log("this device doesn't support auto focus");
         }
     }
 }

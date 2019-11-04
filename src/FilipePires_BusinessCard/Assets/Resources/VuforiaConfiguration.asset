@@ -9,22 +9,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AdaWyUT/////AAABmVzM0ayOrUpFpfDANUW6YLJtpePDvIlva5QFLvax+cYlQlYS/Sg6hRdYA4yiPYfASmb763lRHgTKJ3xujXEZwmsGUwwy4nibyhf2Ce8MI3brQGUDcAEC/JjJaWcezMniuVdjZlsAfsxaz/oqqzWqBJimf06BcOnZgSAJekALNedKFItgiZDQ+cxgymVJsQbU33AJtMyLxQNtPlu6iTu6+RUhrviqOtwdR7y+txigKVkNJKb21SuTmtx4RgQJryb73h1lN6nH06mDENHz7R+jRELvdNf3NPUqiCKiVVCDp4dVOk/qJCSrm3MVgz859URvSrgTZImfc47TUL6blh2FIAFm7+ke3B2G41x1kPopGFY+
-    ufoLicenseKey: QVhiM0Y1Ly8vLy8vQUFBQUtPbnFIeHJFSGs1N3VrMlg4U050eVBzK2pkOFZxMDhrazlwYjBsYS9aZUIxQlV1ckZWcWt0ZllSQWpnT2tIRlY2VzdOMDRTRjNYRUhmbTF5L1BnYlB4eWdHWEF6RUNheXowc3dyNVNYa2ozdERuRjhka1FpOHRscHdkMDcrcEJEY1FjTjNJcUM1bEgwOTYzQkdZdjRsQStRb0hSQU9nRGthelp5TlY0WHVwWU9EaE05NWw5bXAzbnBDMjM5MWZBWXBFdEdiL2loTDNab3N4b25ZblhjK1JtSS9wLzRoTDIwVGhmTXR6WFJNYkpUTXZLZzJoQ0N0TEJXNEptZ0pSOUtSdStzQWM3QjVNOWFFMGVHQ1dUT1VRSUUweEpiZC9ZL2cvS29iNDhBRXdQOGFwbWR5NmRWU0FHU2psVzRZY2FEU2Zud3J1ZHhucVNmSUZiajNTUnIzM0lKVlFIaW1rL0oyOGNFeDdyekcySXg=
+    ufoLicenseKey: QVVaUXAwTC8vLy8vQUFBQUtIcnFOQ3Z4VDBMVmxaSHdtTlRjTXpPSUNGUlJFaGE1SGZCOVhVQWVST3J1S0JZQlpqTU1yeHNaWU9mVHZPdFpRMWxDdy9OUk5jd2NGK083N3Q3Snk1ZzFtdTFXMFIxYk9hbjRzN0l3SGh0bDI2ZmxWQ1hJcERjaHdCREU2cmNHMGR0WndaQmFKNTY2RGNEQ1pyanpvRUpNVk9oOERtRUtWVzN6LzBPKzEza1RsMEEyeTVMS3Ixa3p5OENGRFRMQkpETWRQNVd5cXZ5THhOOG15MHVGMlVLcFVEclRUa25VNktWd0ZYbzdmNStsVkRBWXBzeCtHRlhWNk5ITlczd2o0azNNU0VvbXdNY2VqS0VtNUpKdWhxMGk2bUdMZzg4REpyTzZrcGF4Q2IybVFIcGFVK0x2N3M2V0ZJSG15Qis3bm5JTCtSOGZ5NTdmbDAyTk5UQ2c1U213SnFkVVdTRTBKaWdDWGNUWTAzeUM=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
-    version: 8.5.8
+    version: 8.5.9
     eulaAcceptedVersions: '{"Values":["8.1","8.5"]}'
   database:
-    disableModelExtraction: 0
+    disableModelExtraction: 1
   videoBackground:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
@@ -33,12 +33,12 @@ MonoBehaviour:
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    arcoreRequirement: 0
+    arcoreRequirement: 1
     autoImportArcore: 0
   smartTerrain:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: USB Camera
     turnOffWebCam: 0
     renderTextureLayer: 30

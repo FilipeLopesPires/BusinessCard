@@ -7,8 +7,14 @@ src/FilipePires_BusinessCard/Library/StateCache/
 # logs
 src/FilipePires_BusinessCard/Logs
 
+# temporary files
+src/FilipePires_BusinessCard/Temp
+
 # photoshop files
 *.psd
 
 # unity meta files
 *.meta
+
+# video editing
+demo/production

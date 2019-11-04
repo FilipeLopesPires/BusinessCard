@@ -4,11 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: d7cab2d7de922cf4f9f4523d18e5bbda
+  productGUID: fa1b4db96b3115643bb7fd31053e04e6
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -40,7 +40,8 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: e0866a3fe6007224a9e3078d831ce6fc,
+    type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -52,7 +53,7 @@ PlayerSettings:
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
-  displayResolutionDialog: 0
+  displayResolutionDialog: 1
   iosUseCustomAppBackgroundBehavior: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
@@ -68,8 +69,8 @@ PlayerSettings:
   androidUseSwappy: 0
   androidBlitType: 0
   defaultIsNativeResolution: 1
-  macRetinaSupport: 1
-  runInBackground: 0
+  macRetinaSupport: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -91,7 +92,7 @@ PlayerSettings:
   xboxEnableKinect: 0
   xboxEnableKinectAutoTracking: 0
   xboxEnableFitness: 0
-  visibleInBackground: 1
+  visibleInBackground: 0
   allowFullscreenSwitch: 1
   graphicsJobMode: 0
   fullscreenMode: 1
@@ -107,7 +108,7 @@ PlayerSettings:
   xboxOneLoggingLevel: 1
   xboxOneDisableEsram: 0
   xboxOnePresentImmediateThreshold: 0
-  switchQueueCommandMemory: 1048576
+  switchQueueCommandMemory: 0
   switchQueueControlMemory: 16384
   switchQueueComputeMemory: 262144
   switchNVNShaderPoolsGranularity: 33554432
@@ -120,13 +121,13 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.1
+  bundleVersion: 1.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
-  xboxOneDisableKinectGpuReservation: 1
-  xboxOneEnable7thCore: 1
+  xboxOneDisableKinectGpuReservation: 0
+  xboxOneEnable7thCore: 0
   vrSettings:
     cardboard:
       depthFormat: 0
@@ -140,7 +141,7 @@ PlayerSettings:
       maximumSupportedHeadTracking: 1
     hololens:
       depthFormat: 1
-      depthBufferSharingEnabled: 1
+      depthBufferSharingEnabled: 0
     lumin:
       depthFormat: 0
       frameTiming: 2
@@ -148,8 +149,8 @@ PlayerSettings:
       glCacheMaxBlobSize: 524288
       glCacheMaxFileSize: 8388608
     oculus:
-      sharedDepthBuffer: 1
-      dashSupport: 1
+      sharedDepthBuffer: 0
+      dashSupport: 0
       lowOverheadMode: 0
       protectedContext: 0
       v2Signing: 0
@@ -164,8 +165,10 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.FilipePires.BusinessCardAR
-  buildNumber: {}
+    Android: com.FilipePires.ARBusinessCard
+    iPhone: com.vuforia.engine.CoreSamplesUnity
+  buildNumber:
+    iPhone: 0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
@@ -180,9 +183,9 @@ PlayerSettings:
   APKExpansionFiles: 0
   keepLoadedShadersAlive: 0
   StripUnusedMeshComponents: 0
-  VertexChannelCompressionMask: 4054
+  VertexChannelCompressionMask: 214
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 9.0
+  iOSTargetOSVersionString: 11.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 9.0
@@ -243,7 +246,7 @@ PlayerSettings:
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
   metalAPIValidation: 1
-  iOSRenderExtraFrameOnPause: 0
+  iOSRenderExtraFrameOnPause: 1
   appleDeveloperTeamID: 
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
@@ -253,13 +256,13 @@ PlayerSettings:
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
-  clonedFromGUID: 00000000000000000000000000000000
+  clonedFromGUID: 18e981bbcc3bd054bb9ab855a38fa50b
   templatePackageId: 
   templateDefaultScene: 
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
+  AndroidKeystoreName: '{inproject}: '
   AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -294,37 +297,27 @@ PlayerSettings:
       m_Height: 432
       m_Kind: 2
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 0603a49555c51d54db0962e97aa5d8fd, type: 3}
-      - {fileID: 2800000, guid: 0603a49555c51d54db0962e97aa5d8fd, type: 3}
+    - m_Textures: []
       m_Width: 324
       m_Height: 324
       m_Kind: 2
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 49d9223320915154cbb12aaf6ba51da6, type: 3}
-      - {fileID: 2800000, guid: 49d9223320915154cbb12aaf6ba51da6, type: 3}
+    - m_Textures: []
       m_Width: 216
       m_Height: 216
       m_Kind: 2
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 207268b43d28a7344b4ca736c0cd3ed1, type: 3}
-      - {fileID: 2800000, guid: 207268b43d28a7344b4ca736c0cd3ed1, type: 3}
+    - m_Textures: []
       m_Width: 162
       m_Height: 162
       m_Kind: 2
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 56e6443980bf1da41a06d0aea48a075f, type: 3}
-      - {fileID: 2800000, guid: 56e6443980bf1da41a06d0aea48a075f, type: 3}
+    - m_Textures: []
       m_Width: 108
       m_Height: 108
       m_Kind: 2
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 115d2b8ea07ad444eb4abdfc5c1cf4a3, type: 3}
-      - {fileID: 2800000, guid: 115d2b8ea07ad444eb4abdfc5c1cf4a3, type: 3}
+    - m_Textures: []
       m_Width: 81
       m_Height: 81
       m_Kind: 2
@@ -336,31 +329,31 @@ PlayerSettings:
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 8870461deb31f864eb65cea0184c8cd4, type: 3}
+      - {fileID: 0}
       m_Width: 144
       m_Height: 144
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 9081579e77a9fad489a54cd3cb253abe, type: 3}
+      - {fileID: 0}
       m_Width: 96
       m_Height: 96
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 715c919e6900cea4f99f9c67b9719bae, type: 3}
+      - {fileID: 0}
       m_Width: 72
       m_Height: 72
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 2feaf863ae387da468b7f00f793cb671, type: 3}
+      - {fileID: 0}
       m_Width: 48
       m_Height: 48
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 6d51535f145eda54ca09843edcb282a2, type: 3}
+      - {fileID: 0}
       m_Width: 36
       m_Height: 36
       m_Kind: 1
@@ -372,37 +365,156 @@ PlayerSettings:
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 8870461deb31f864eb65cea0184c8cd4, type: 3}
+      - {fileID: 0}
       m_Width: 144
       m_Height: 144
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 9081579e77a9fad489a54cd3cb253abe, type: 3}
+      - {fileID: 0}
       m_Width: 96
       m_Height: 96
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 715c919e6900cea4f99f9c67b9719bae, type: 3}
+      - {fileID: 0}
       m_Width: 72
       m_Height: 72
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 2feaf863ae387da468b7f00f793cb671, type: 3}
+      - {fileID: 0}
       m_Width: 48
       m_Height: 48
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 6d51535f145eda54ca09843edcb282a2, type: 3}
+      - {fileID: 0}
       m_Width: 36
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Textures:
+      - {fileID: 2800000, guid: 50f07d81dcf4c4fbb8b2c326e7d4b6bb, type: 3}
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 4
+      m_SubKind: App Store
+    - m_Textures:
+      - {fileID: 2800000, guid: 83a6483f53e5f448a84f14d9e27ee822, type: 3}
+      m_Width: 60
+      m_Height: 60
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: b3252f95d1a3a4cd58871ff4716e5d8b, type: 3}
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: b3252f95d1a3a4cd58871ff4716e5d8b, type: 3}
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: f9da296bf616b458d98a63f8f7557004, type: 3}
+      m_Width: 20
+      m_Height: 20
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: dd034f60ad00b407089fd2248eb2bae0, type: 3}
+      m_Width: 87
+      m_Height: 87
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: 753491ea5c3de4f928409d7f8e96b80b, type: 3}
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: ead39ea5b70b3401090170549ec78dda, type: 3}
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: 753491ea5c3de4f928409d7f8e96b80b, type: 3}
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: ead39ea5b70b3401090170549ec78dda, type: 3}
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: e5d044c008db542bf8371f7e7c91bb50, type: 3}
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: b36a145ee04964f5a8fbc998f53ad10f, type: 3}
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: b36a145ee04964f5a8fbc998f53ad10f, type: 3}
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: b3252f95d1a3a4cd58871ff4716e5d8b, type: 3}
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 73c9e6fc8fd374b119e143a8bc52bf28, type: 3}
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: e5d044c008db542bf8371f7e7c91bb50, type: 3}
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures:
+      - {fileID: 2800000, guid: 4cbc9362b367d44d58da2b6146f50c17, type: 3}
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 6cb233dc65f0b459daf2ad80d17034da, type: 3}
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures:
+      - {fileID: 2800000, guid: 819aa9af392f0436686712974e387eb9, type: 3}
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
   m_BuildTargetBatching: []
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 0b0000000800000015000000
+    m_Automatic: 1
   m_BuildTargetVRSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -413,7 +525,13 @@ PlayerSettings:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: Standalone
+    m_EncodingQuality: 1
+  - m_BuildTarget: XboxOne
+    m_EncodingQuality: 1
+  - m_BuildTarget: PS4
+    m_EncodingQuality: 1
   m_BuildTargetGroupLightmapSettings: []
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
@@ -421,7 +539,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: Camera access required for target detection and tracking
   locationUsageDescription: 
   microphoneUsageDescription: 
   switchNetLibKey: 
@@ -496,7 +614,7 @@ PlayerSettings:
   switchAccessibleURLs: 
   switchLegalInformation: 
   switchMainThreadStackSize: 1048576
-  switchPresenceGroupId: 
+  switchPresenceGroupId: 0x01004b9000490000
   switchLogoHandling: 0
   switchReleaseVersion: 0
   switchDisplayVersion: 1.0.0
@@ -508,8 +626,8 @@ PlayerSettings:
   switchUserAccountSaveDataSize: 0
   switchUserAccountSaveDataJournalSize: 0
   switchApplicationAttribute: 0
-  switchCardSpecSize: -1
-  switchCardSpecClock: -1
+  switchCardSpecSize: 4
+  switchCardSpecClock: 25
   switchRatingsMask: 0
   switchRatingsInt_0: 0
   switchRatingsInt_1: 0
@@ -523,7 +641,7 @@ PlayerSettings:
   switchRatingsInt_9: 0
   switchRatingsInt_10: 0
   switchRatingsInt_11: 0
-  switchLocalCommunicationIds_0: 
+  switchLocalCommunicationIds_0: 0x01004b9000490000
   switchLocalCommunicationIds_1: 
   switchLocalCommunicationIds_2: 
   switchLocalCommunicationIds_3: 
@@ -538,7 +656,7 @@ PlayerSettings:
   switchDataLossConfirmation: 0
   switchUserAccountLockEnabled: 0
   switchSystemResourceMemory: 16777216
-  switchSupportedNpadStyles: 6
+  switchSupportedNpadStyles: 3
   switchNativeFsCacheSize: 32
   switchIsHoldTypeHorizontal: 0
   switchSupportedNpadCount: 8
@@ -556,7 +674,7 @@ PlayerSettings:
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
-  ps4ParentalLevel: 11
+  ps4ParentalLevel: 1
   ps4ContentID: ED1633-NPXX51362_00-0000000000000000
   ps4Category: 0
   ps4MasterVersion: 01.00
@@ -566,7 +684,7 @@ PlayerSettings:
   ps4VideoOutPixelFormat: 0
   ps4VideoOutInitialWidth: 1920
   ps4VideoOutBaseModeInitialWidth: 1920
-  ps4VideoOutReprojectionRate: 60
+  ps4VideoOutReprojectionRate: 120
   ps4PronunciationXMLPath: 
   ps4PronunciationSIGPath: 
   ps4BackgroundImagePath: 
@@ -583,7 +701,7 @@ PlayerSettings:
   ps4RemotePlayKeyAssignment: -1
   ps4RemotePlayKeyMappingDir: 
   ps4PlayTogetherPlayerCount: 0
-  ps4EnterButtonAssignment: 2
+  ps4EnterButtonAssignment: 1
   ps4ApplicationParam1: 0
   ps4ApplicationParam2: 0
   ps4ApplicationParam3: 0
@@ -605,7 +723,7 @@ PlayerSettings:
   ps4ReprojectionSupport: 0
   ps4UseAudio3dBackend: 0
   ps4SocialScreenEnabled: 0
-  ps4ScriptOptimizationLevel: 2
+  ps4ScriptOptimizationLevel: 3
   ps4Audio3dVirtualSpeakerCount: 14
   ps4attribCpuUsage: 0
   ps4PatchPkgPath: 
@@ -627,26 +745,38 @@ PlayerSettings:
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
-  webGLMemorySize: 32
+  webGLMemorySize: 256
   webGLExceptionSupport: 1
   webGLNameFilesAsHashes: 0
-  webGLDataCaching: 1
+  webGLDataCaching: 0
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
-  webGLLinkerTarget: 1
+  webGLCompressionFormat: 1
+  webGLLinkerTarget: 0
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
-  scriptingDefineSymbols: {}
-  platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingDefineSymbols:
+    4: VUFORIA_IOS_SETTINGS
+    7: VUFORIA_ANDROID_SETTINGS
+    14: VUFORIA_WSA_SETTINGS
+  platformArchitecture:
+    iPhone: 2
+  scriptingBackend:
+    Android: 0
+    Standalone: 0
+    WP8: 2
+    WebGL: 1
+    WebPlayer: 0
+    Windows Store Apps: 1
+    iPhone: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
-  incrementalIl2cppBuild: {}
+  incrementalIl2cppBuild:
+    iPhone: 1
   allowUnsafeCode: 0
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
@@ -655,30 +785,103 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: New Unity Project
-  metroPackageVersion: 
-  metroCertificatePath: 
+  metroPackageName: Vuforia.Engine.CoreSamplesUnity
+  metroPackageVersion: 8.5.0.0
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: New Unity Project
-  wsaImages: {}
+  metroCertificateSubject: Vuforia
+  metroCertificateIssuer: Vuforia
+  metroCertificateNotAfter: 80a428773e1cd501
+  metroApplicationDescription: Vuforia Samples
+  wsaImages:
+    65636: Assets/Common/Icons/UWP/StoreLogo.scale-100.png
+    65661: Assets/Common/Icons/UWP/StoreLogo.scale-125.png
+    65686: Assets/Common/Icons/UWP/StoreLogo.scale-150.png
+    65736: Assets/Common/Icons/UWP/StoreLogo.scale-200.png
+    65936: Assets/Common/Icons/UWP/StoreLogo.scale-400.png
+    131172: Assets/Common/Icons/UWP/SplashScreen.scale-100.png
+    131197: Assets/Common/Icons/UWP/SplashScreen.scale-125.png
+    131222: Assets/Common/Icons/UWP/SplashScreen.scale-150.png
+    131272: Assets/Common/Icons/UWP/SplashScreen.scale-200.png
+    2031632: Assets/Common/Icons/UWP/Square44x44Logo.targetsize-16.png
+    2031640: Assets/Common/Icons/UWP/Square44x44Logo.targetsize-24.png
+    2031648: Assets/Common/Icons/UWP/Square44x44Logo.targetsize-32.png
+    2031664: Assets/Common/Icons/UWP/Square44x44Logo.targetsize-48.png
+    2031716: Assets/Common/Icons/UWP/Square44x44Logo.scale-100.png
+    2031741: Assets/Common/Icons/UWP/Square44x44Logo.scale-125.png
+    2031766: Assets/Common/Icons/UWP/Square44x44Logo.scale-150.png
+    2031816: Assets/Common/Icons/UWP/Square44x44Logo.scale-200.png
+    2031872: Assets/Common/Icons/UWP/Square44x44Logo.targetsize-256.png
+    2032016: Assets/Common/Icons/UWP/Square44x44Logo.scale-400.png
+    2162788: Assets/Common/Icons/UWP/Square150x150Logo.scale-100.png
+    2162813: Assets/Common/Icons/UWP/Square150x150Logo.scale-125.png
+    2162838: Assets/Common/Icons/UWP/Square150x150Logo.scale-150.png
+    2162888: Assets/Common/Icons/UWP/Square150x150Logo.scale-200.png
+    2163088: Assets/Common/Icons/UWP/Square150x150Logo.scale-400.png
+    2293860: Assets/Common/Icons/UWP/Wide310x150Logo.scale-100.png
+    2293885: Assets/Common/Icons/UWP/Wide310x150Logo.scale-125.png
+    2293910: Assets/Common/Icons/UWP/Wide310x150Logo.scale-150.png
+    2293960: Assets/Common/Icons/UWP/Wide310x150Logo.scale-200.png
+    2294160: Assets/Common/Icons/UWP/Wide310x150Logo.scale-400.png
   metroTileShortName: 
   metroTileShowName: 0
-  metroMediumTileShowName: 0
+  metroMediumTileShowName: 1
   metroLargeTileShowName: 0
-  metroWideTileShowName: 0
+  metroWideTileShowName: 1
   metroSupportStreamingInstall: 0
   metroLastRequiredScene: 0
   metroDefaultTileSize: 1
-  metroTileForegroundText: 2
-  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
-  metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628,
-    a: 1}
-  metroSplashScreenUseBackgroundColor: 0
-  platformCapabilities: {}
-  metroTargetDeviceFamilies: {}
+  metroTileForegroundText: 1
+  metroTileBackgroundColor: {r: 0.4117647, g: 0.7490196, b: 0.2901961, a: 1}
+  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenUseBackgroundColor: 1
+  platformCapabilities:
+    WindowsStoreApps:
+      AllJoyn: False
+      Appointments: False
+      BackgroundMediaPlayback: False
+      BlockedChatMessages: False
+      Bluetooth: False
+      Chat: False
+      CodeGeneration: False
+      Contacts: False
+      EnterpriseAuthentication: False
+      HumanInterfaceDevice: False
+      InputInjectionBrokered: False
+      InternetClient: True
+      InternetClientServer: False
+      Location: False
+      LowLevelDevices: False
+      Microphone: False
+      MusicLibrary: False
+      Objects3D: False
+      OfflineMapsManagement: False
+      PhoneCall: False
+      PhoneCallHistoryPublic: False
+      PicturesLibrary: False
+      PointOfService: False
+      PrivateNetworkClientServer: False
+      Proximity: False
+      RecordedCallsFolder: False
+      RemoteSystem: False
+      RemovableStorage: False
+      SharedUserCertificates: False
+      SpatialPerception: False
+      SystemManagement: False
+      UserAccountInformation: False
+      UserDataTasks: False
+      UserNotificationListener: False
+      VideosLibrary: False
+      VoipCall: False
+      WebCam: True
+  metroTargetDeviceFamilies:
+    Desktop: False
+    Holographic: False
+    IoT: False
+    IoTHeadless: False
+    Mobile: False
+    Team: False
+    Xbox: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
@@ -700,7 +903,7 @@ PlayerSettings:
   XboxOneCapability: []
   XboxOneGameRating: {}
   XboxOneIsContentPackage: 0
-  XboxOneEnableGPUVariability: 1
+  XboxOneEnableGPUVariability: 0
   XboxOneSockets: {}
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
@@ -724,14 +927,14 @@ PlayerSettings:
   luminVersion:
     m_VersionCode: 1
     m_VersionName: 
-  facebookSdkVersion: 
+  facebookSdkVersion: 7.9.4
   facebookAppId: 
   facebookCookies: 1
   facebookLogging: 1
   facebookStatus: 1
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
-  apiCompatibilityLevel: 6
+  apiCompatibilityLevel: 3
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   projectName: 
@@ -739,4 +942,4 @@ PlayerSettings:
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
-  legacyClampBlendShapeWeights: 0
+  legacyClampBlendShapeWeights: 1
