@@ -2,11 +2,18 @@
 Augmented Professional Business Card
 
 ![](https://img.shields.io/badge/Maintained-Yes-brightgreen)
-![](https://img.shields.io/badge/Made%20For-Smartphones-brightgreen)
+![](https://img.shields.io/badge/Made%20For-Mobile-lightgrey)
 ![](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Description:
 
+This project aims at providing access to an augmented version of my business card.
+The result should be similar to the following:
+
+<p float="left">
+  <img src="https://github.com/FilipePires98/BusinessCard/blob/master/img/ar-businesscard-ptc-vuforia-v1.2-rec01.gif" width="360px">
+  <img src="https://github.com/FilipePires98/BusinessCard/blob/master/img/ar-businesscard-ptc-vuforia-v1.2-rec02.gif" width="360px">
+</p>
 
 ## Instructions to Install and Run:
 
