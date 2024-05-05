@@ -1,9 +1,8 @@
 # AR Business Card
 Augmented Professional Business Card
 
-![](https://img.shields.io/badge/Maintained-Yes-brightgreen)
+![](https://img.shields.io/badge/Maintained-No-red)
 ![](https://img.shields.io/badge/Made%20For-Mobile-lightgrey)
-![](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Description:
 
